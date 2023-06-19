@@ -1,0 +1,27 @@
+{
+    "name": "poc-pandacss-orbit",
+    "description": "Proof of concept of a PandaCSS implementation of a CSS in JS styling system for our design system.",
+    "private": true,
+    "license": "Apache-2.0",
+    "repository": {
+        "type": "git",
+        "url": "git+https://github.com/alexasselin008/poc-pandacss-orbit.git"
+    },
+    "scripts": {
+        "build": "pnpm -r build",
+        "lint": "pnpm run /^lint:.*/",
+        "lint:eslint": "eslint --ext .js,.ts,.tsx . --max-warnings=-1 --cache --cache-location node_modules/.cache/eslint",
+        "lint:types": "pnpm -r --parallel --include-workspace-root exec tsc",
+        "test": "echo \"Error: no test specified\""
+    },
+    "devDependencies": {
+        "@workleap/eslint-plugin": "1.6.0",
+        "@workleap/typescript-configs": "2.3.0",
+        "eslint": "8.37.0",
+        "typescript": "5.0.3"
+    },
+    "engines": {
+        "node": ">=18.0.0"
+    },
+    "packageManager": "pnpm@8.6.0"
+}
